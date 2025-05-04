@@ -27,8 +27,12 @@ class MainActivity : ComponentActivity() {
                 val userList = userViewModel.users.collectAsState().value
                 Column(modifier = Modifier.padding(16.dp)) {
                     Text(text = "NIM: 225150201111010", style = MaterialTheme.typography.bodyLarge)
-                    Text(text = "Nama: Ahmad Fauzan Roziqin", style = MaterialTheme.typography.bodyLarge)
+                    Text(
+                        text = "Nama: Ahmad Fauzan Roziqin",
+                        style = MaterialTheme.typography.bodyLarge
+                    )
                     allUser(listUser = userList)
+                }
             }
         }
     }
